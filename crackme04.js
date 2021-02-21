@@ -1,9 +1,9 @@
 // Vous devez assigner la bonne string à la variable password ci dessous
 // Et obtenir le message 'OK' en éxecutant le programme
-let password = ''
+let password = '1337'
 
 const crackme4 = (password) => {
-  let tmp1 = 0
+  let tmp1 = 1337
   for (let i = 0; i < password.length; ++i) {
     tmp1 += password.charCodeAt(i)
   }

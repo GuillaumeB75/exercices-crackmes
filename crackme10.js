@@ -5,9 +5,9 @@ let password = ''
 const crackme10 = (password) => {
   if (
     password
-      .trim()
-      .toLowerCase()
-      .split('')
+      .trim()  //enlever les espaces
+      .toLowerCase() // mettre en minuscule
+      .split('') // extraire un terme
       .filter((elem) => ['a', 'e', 'i', 'o', 'u', 'y'].includes(elem))
       .map((elem) => elem.charCodeAt())
       .reduce((a, b) => {
